@@ -19,8 +19,13 @@ function Header(){
               <Link to="/create" className="nav-link">
                 create Task 
               </Link>
-            </li>
-          
+ 
+            </li> 
+             <li className="navbar-item">
+              <Link to="/edit/:id" className="nav-link">
+                edit Task 
+              </Link>            
+            </li>                              
           </ul>
         </div>
       </nav>

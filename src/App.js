@@ -1,7 +1,7 @@
- import './App.css';
 import Header from './components/Header'
 import CreateTask from './components/Task'
 import TaskList from './components/TaskList'
+import EditTask from "./components/editTask" 
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -12,7 +12,8 @@ function App() {
         <Routes>
         <Route path="/" exact element={<TaskList/>} />
         <Route path="/create" element={<CreateTask/>} />
-       </Routes>
+         <Route path="/edit/:id"   element={EditTask} />
+        </Routes>
       </div>
     </Router>
    );
